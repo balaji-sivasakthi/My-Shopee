@@ -1,0 +1,45 @@
+.nav-bar {
+  background-color: white;
+  -webkit-box-shadow: #757575 0 0 4px;
+          box-shadow: #757575 0 0 4px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 10vh;
+  width: 100%;
+}
+
+.nav-brand {
+  padding: 10px;
+}
+
+.nav-brand span {
+  margin-left: 10px;
+  color: orangered;
+  font-weight: 600;
+  font-size: 24px;
+}
+
+.nav-brand img {
+  border-radius: 50%;
+  width: 60px;
+  height: 60px;
+}
+
+.nav-list {
+  padding: 20px;
+}
+
+.nav-list ul {
+  list-style: none;
+}
+
+.nav-list ul li {
+  display: inline;
+  padding: 10px;
+}
+
+.nav-list ul li a {
+  text-decoration: none;
+}
+/*# sourceMappingURL=nav.css.map */
