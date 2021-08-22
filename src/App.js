@@ -7,13 +7,30 @@ import Login from './Components/Login';
 import SignUp from './Components/SignUp';
 import Service from './Components/Service';
 import Contact from './Components/Contact';
+import MainHome from './Components/MainHome'
+import { useState } from 'react';
 function App() {
-  return (
 
+  const [user,setuser]=useState(false);
+  const useUser=()=>{
+    setuser(true)
+  }
+
+
+
+  return (
     <Router>
     <div className="App">
        
             <Switch>
+              <Route exact path="/home">
+                
+                 {
+                    (user)?<Login/>:<MainHome/>
+                 }
+
+                
+              </Route>
               <Route exact path="/">
                   <NavBar/>
                   <Main/>
